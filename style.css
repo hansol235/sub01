@@ -13,11 +13,32 @@
 *{margin: 0; padding: 0;}
 a{text-decoration: none; color: #365d56;}
 ul{list-style: none;}
-body{background: #fff; font-size: 16px;line-height: 45px; color: #333;font-family: 'Spoqa Han Sans Neo'; }
+body{background: #fff; font-size: 16px; 
+  font-family: 'SpoqaHanSansNeo-Regular'; color: #363636; line-height: 40px;
+}
 
 /*헤더*/
-header{background-color: #fff; position: relative;height: 893px; line-height: 20px;}
-.headerbg{margin: 0 auto; width: 1920px; display: block; text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); position: absolute; z-index: 3; margin-left: -960px; left: 50%;}
+header{background-color: #fff; 
+
+  height:  940px;
+  /* margin-bottom: 80px; */
+
+  width:100%;
+   height:170px; /*이미지 높이가 높은편이라 a태그가 좀 아래에서 잡힘*/
+
+  background: url(images/headerstyle.png)no-repeat center top;
+  background-size: cover;
+
+  position:absolute; 
+  top:0; left:0; /*부모가 body 자식이 header*/
+}
+
+
+
+.headerbg{ width:100%;
+  /* margin: 0 auto;  */
+  /* width: 1920px;  */
+  display: block; text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); position: absolute; z-index: 3; margin-left: -960px; left: 50%;}
 .navbg{background-color: #fff;width: 100%; height: 78px; position: absolute; top: 0; z-index: 2; box-shadow: 5px, 5px, 5px, rgba(0, 0, 0, 0.3) ;}
 .nav{width: 1320px; margin: 0 auto; height: 78px; position: absolute; top: 0; left: 50%; margin-left: -660px; text-align: center;z-index: 5;}
 .menu1{float: left; font-size: 20px; font-weight: bold; }
@@ -37,14 +58,13 @@ header{background-color: #fff; position: relative;height: 893px; line-height: 20
     transition-duration:0.5s;}
 .m1{padding-right: 220px;}
 .m2{padding-left: 270px;}
-.m1{padding-right: 220px;}
-.m2{padding-left: 270px;}
 
 .logo{position: absolute; top: 11px; left: 50%; margin-left: -82.5px;}
-/*메인배너*/
-.main{z-index: 1; text-align: center;}
-.main img{width: 1920px; display: block;}
 
+
+ /*메인배너*/
+.main{z-index: 1; text-align: center; }
+.main img{width:100%; display: block;}
 
 /*브랜드 스토리*/
 .con1{width: 1320px; height: 1700px;  margin: 0 auto; background: url(images/bar.png) center top no-repeat;}
@@ -52,7 +72,7 @@ h1{font-size: 36px;  padding-top: 145px; text-align: center; height: 165px;}
 
 .left{width: 608px; float: left;}
 .left img{display: block; margin-bottom: 85px;}
-.left p,.right p{padding-top: 50px; background: url(images/leaf.png) no-repeat left top; font-weight: 500; margin-bottom: 195px;}
+.left p,.right p{padding-top: 50px; background: url(images/leaf.png) no-repeat left top; font-weight: 500; margin-bottom: 195px; }
 
 .right{float: right; width: 670px; position: relative;}
 .tree{display: block;}
