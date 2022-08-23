@@ -10,11 +10,23 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'GyeonggiTitleM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: #365d56;}
+ul{list-style: none;}
+body{background: #fff; font-size: 16px;line-height: 45px; color: #333;font-family: 'Spoqa Han Sans Neo'; position: relative;}
+
+/*헤더*/
 *{margin: 0; padding: 0;}
 a{text-decoration: none; color: #365d56;}
 ul{list-style: none;}
 body{background: #fff; font-size: 16px; 
-  font-family: 'SpoqaHanSansNeo-Regular'; color: #363636; line-height: 40px;
+  font-family: 'SpoqaHanSansNeo-Regular'; position: relative;
 }
 
 /*헤더*/
@@ -31,6 +43,7 @@ header{background-color: #fff;
 
   position:absolute; 
   top:0; left:0; /*부모가 body 자식이 header*/
+  line-height: 20px;
 }
 
 
@@ -61,10 +74,13 @@ header{background-color: #fff;
 
 .logo{position: absolute; top: 11px; left: 50%; margin-left: -82.5px;}
 
+/*메인배너*/
+.main{z-index: 1; text-align: center;}
 
- /*메인배너*/
-.main{z-index: 1; text-align: center; }
-.main img{width:100%; display: block;}
+.main img{
+  /* width: 1920px; */
+  width:100%; display:block;
+ }
 
 /*브랜드 스토리*/
 .con1{width: 1320px; height: 1700px;  margin: 0 auto; background: url(images/bar.png) center top no-repeat;}
@@ -79,9 +95,7 @@ h1{font-size: 36px;  padding-top: 145px; text-align: center; height: 165px;}
 .apron{position: absolute; top: 500px; left: 300px; z-index: 3;}
 
 /*중간*/
-.happylist{background: url(images/happybg.jpg) repeat center top 100%; height: 350px; width: 100%;}
-.happylist ul{width: 1320px; margin: 0 auto;}
-.happylist ul li{float: left; padding: 110px;}
+.happylist img{display: block; width: 100%;}
 
 /*커피*/
 .con2{width: 1320px; margin: 0 auto; background: url(images/bar.png) center top no-repeat;}
